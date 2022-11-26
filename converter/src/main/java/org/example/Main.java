@@ -20,6 +20,9 @@ public class Main {
                 result = binaryToGray.convert(number);
                 System.out.println(result);
                 break;
+            case ("--help"):
+                System.out.println("Converter binary digits to gray code. You need use mode -bg (BinaryGray) or -gb (GrayBinary)." +
+                        " After input mode, you need input binary digit (only 1 and 0).");
             case ("-gb"):
                 //TODO
                 break;
