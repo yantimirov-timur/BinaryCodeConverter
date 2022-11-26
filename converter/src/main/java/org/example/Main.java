@@ -13,19 +13,20 @@ public class Main {
                 System.out.println("Please, enter correct binary digit. You can input only 1 and 0");
                 return;
             }
-            int number = Integer.parseInt(args[1]);
+            int binaryDigit = Integer.parseInt(args[1]);
+            int decimalDigit = Integer.parseInt(args[1], 2); //Convert bin num to decimal
             int result;
             switch (args[0]) {
-                case ("-bg") -> {
+                case ("-bg"):
                     Converter binaryToGray = new BinaryToGrayConverter();
-                    result = binaryToGray.convert(number);
-                    System.out.println(result);
-                }
-                case ("-gb") -> {
+                    result = binaryToGray.convert(binaryDigit);
+                    System.out.println("Binary digit with gray code: " + result + "\nDecimal representation: " + decimalDigit);
+                    break;
+                case ("-gb"):
                     Converter grayToBinary = new GrayToBinaryConverter();
-                    result = grayToBinary.convert(number);
-                    System.out.println(result);
-                }
+                    result = grayToBinary.convert(binaryDigit);
+                    System.out.println("Binary digit with" + result + "\nDecimal representation: " + decimalDigit);
+                    break;
             }
         } else {
             System.out.println("Converter binary digits to gray code. You need use mode -bg (BinaryGray) or -gb (GrayBinary)." +
