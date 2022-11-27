@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         InputProcessor inputProcessor = new InputProcessor();
+        if (args.length == 0) {
+            System.out.println("Please type --help and read instructions");
+            return;
+        }
+
         if (inputProcessor.isCorrectConvertMode(args[0])) {
             System.out.println("Please, enter correct convert mode. -bg or -gb");
             return;
