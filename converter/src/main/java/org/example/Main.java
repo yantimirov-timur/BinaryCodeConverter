@@ -14,7 +14,7 @@ public class Main {
             return;
         }
         if (!args[0].equals("--help")) {
-            if (inputProcessor.isCorrectBinaryDigit(args[1])) {
+            if (!inputProcessor.isCorrectBinaryDigit(args[1])) {
                 System.out.println("Please, enter correct binary digit. You can input only 1 and 0");
                 return;
             }
