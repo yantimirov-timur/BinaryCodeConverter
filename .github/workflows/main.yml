@@ -25,5 +25,5 @@ jobs:
       - name: Setup and execute Gradle 'test' task
         run: chmod +x gradlew
       - name: Testing
-        run: ./gradlew test --tests "*"
+        run: ./gradlew test
 
