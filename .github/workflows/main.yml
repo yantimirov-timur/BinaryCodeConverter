@@ -12,7 +12,9 @@ jobs:
       matrix:
         os: [ ubuntu-18.04, windows-2022, macos-latest ]
     runs-on: ${{ matrix.os }}
-
+    defaults:
+      run:
+        working-directory: ./converter
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
@@ -20,7 +22,8 @@ jobs:
           distribution: temurin
           java-version: 11
 
-      - uses: converter/gradle/gradle-build-action@v2
       - name: Setup and execute Gradle 'test' task
-        with:
-          arguments: test
+        run: chmod +x gradlew
+      - name: Testing
+        run: ./gradlew test --tests "*"
+
