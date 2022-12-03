@@ -1,5 +1,8 @@
+![Build develop](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=develop)
+![Build main](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
 # BinaryCodeConverter
 Convter Binary code &lt;-> Gray Code
+
 
 ## Abstract
 Converter binary digit to gray and gray code to binary, also you can see decimal representation
