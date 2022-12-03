@@ -2,7 +2,7 @@ package org.example;
 
 public class InputProcessor {
     public boolean isCorrectBinaryDigit(String input) {
-        return !input.matches("[10]+");
+        return input.matches("[10]+");
     }
 
     public boolean isCorrectConvertMode(String input) {
