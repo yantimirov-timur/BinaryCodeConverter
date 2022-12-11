@@ -1,4 +1,5 @@
-![Build main](https://github.com/yantimirov-timur/BinaryCodeConverter/actions/workflows/main.yml/badge.svg?branch=main)
+![Build main](https://github.com/yantimirov-timur/BinaryCodeConverter/actions/workflows/main.yml/badge.svg?branch=main) (main)
+![Build main](https://github.com/yantimirov-timur/BinaryCodeConverter/actions/workflows/main.yml/badge.svg?branch=develop) (develop)
 # BinaryCodeConverter
 Convter Binary code &lt;-> Gray Code
 
